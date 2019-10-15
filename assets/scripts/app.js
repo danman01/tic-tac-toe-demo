@@ -7,6 +7,7 @@
 // require('./example')
 const getFormFields = require('../../lib/get-form-fields')
 const api = require('./api')
+const ui = require('./ui')
 
 // jQuery document.ready function
 $(() => {
@@ -22,6 +23,9 @@ const onSignUp = function (event) {
   const credentials = getFormFields(event.target)
   console.log('credentials are', credentials)
   api.signUp(credentials)
-    .then(console.log)
-    .catch(console.error)
+    .then((response) => {
+      console.log('sign up success within App')
+      ui.signUpSuccess(response)
+    })
+    .catch(ui.signUpFailure)
 }
