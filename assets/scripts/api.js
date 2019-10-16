@@ -24,7 +24,6 @@ const signIn = function (credentials) {
 
 // TODO: change password and sign out
 
-
 module.exports = {
   signUp,
   signIn

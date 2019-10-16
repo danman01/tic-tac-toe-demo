@@ -34,8 +34,18 @@ const onSignIn = function (event) {
 
 // TODO: change password and sign out
 
+// game events
+
+const clickSquare = function (event) {
+  console.log('clicked square', event.target)
+  // add X or O
+  // figure out currentPlayer logic...
+  // send update to Game api
+  // tell user this was successful or a failure
+}
 
 module.exports = {
   onSignUp,
-  onSignIn
+  onSignIn,
+  clickSquare
 }

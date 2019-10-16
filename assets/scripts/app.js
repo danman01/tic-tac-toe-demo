@@ -10,7 +10,11 @@ const events = require('./events')
 // jQuery document.ready function
 $(() => {
   // put code inside document ready
+  // auth event listeners and handlers
   $('#sign-up').on('submit', events.onSignUp)
   $('#sign-in').on('submit', events.onSignIn)
   // TODO: change password and sign out
+
+  // game board event listeners and handlers
+  $('.game-board td').on('click', events.clickSquare)
 })

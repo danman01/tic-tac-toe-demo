@@ -7,3 +7,14 @@
 .success {
   color: green;
 }
+
+/* game board styles */
+.game-board {
+  height: 500px;
+  width: 500px;
+}
+
+.game-board td {
+  border: solid 1px black;
+  text-align: center;
+}
