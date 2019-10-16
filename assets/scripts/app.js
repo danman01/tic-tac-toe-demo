@@ -11,4 +11,6 @@ const events = require('./events')
 $(() => {
   // put code inside document ready
   $('#sign-up').on('submit', events.onSignUp)
+  $('#sign-in').on('submit', events.onSignIn)
+  // TODO: change password and sign out
 })
