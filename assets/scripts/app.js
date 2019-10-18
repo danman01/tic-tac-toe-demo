@@ -17,4 +17,5 @@ $(() => {
 
   // game board event listeners and handlers
   $('.game-board td').on('click', events.clickSquare)
+  $('#create-game').on('click', events.onCreateGame)
 })

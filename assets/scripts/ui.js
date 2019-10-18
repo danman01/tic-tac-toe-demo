@@ -37,11 +37,21 @@ const signInFailure = function (response) {
   $('#message').html("<span class='error'>Failure</span>")
 }
 
+const clickSquareSuccess = function (nextPlayer) {
+  $('#message').html(`<span class='success'>Successfully clicked square. Now it is ${nextPlayer}'s turn</span>`)
+}
+
+const clickSquareFailure = function () {
+  $('#message').html(`<span class='error'>Could not click square</span>`)
+}
+
 // TODO: change password and sign out
 
 module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
-  signInFailure
+  signInFailure,
+  clickSquareSuccess,
+  clickSquareFailure
 }
